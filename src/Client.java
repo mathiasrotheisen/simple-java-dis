@@ -11,22 +11,30 @@ public class Client {
 
     public static void main(String args[]) throws IOException {
 
-        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+        while(true) {
+            Socket clientSocket = new Socket("localhost", PORT);
 
-        Socket clientSocket = new Socket("localhost", PORT);
+            try {
 
-        DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
+                BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 
-        BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-        System.out.println("\nClient Input:");
-        String sentence = inFromUser.readLine();
+                DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 
-        outToServer.writeBytes(sentence + "\n");
+                BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-        String modifiedSentence = inFromServer.readLine();
-        System.out.println("Received from server:" + modifiedSentence);
-        clientSocket.close();
+                System.out.println("\nClient Input:");
+                String sentence = inFromUser.readLine();
+
+                outToServer.writeBytes(sentence + "\n");
+
+                String modifiedSentence = inFromServer.readLine();
+                System.out.println("Received from server:" + modifiedSentence);
+
+            } finally {
+                clientSocket.close();
+            }
+        }
 
 
     }
