@@ -6,9 +6,9 @@ Dette DIS består af en Server og Client klasse, som kan sende simple tekst besk
 Hent dette repository og åbn i IntelliJ
 1. Åbn din terminal eller git bash
 2. Naviger hen til den mappe du ønsker projektet skal ligge i feks `cd /dis2018/exercises`
-3. `git clone https://github.com/Voldemorten/simple-java-dis.git`
-4. Åbn IntelliJ og importer projektet (du skal ikke bruge nogle eksterne frameworks), men sørg for du kører Java 1.8 som SDK
-5. Ved det sidste step (vælg placering) vælger du mappen der netop er blevet lavet i step 3.
+3. Skriv `git clone https://github.com/Voldemorten/simple-java-dis.git`
+4. Åbn IntelliJ og importer (vigtigt i ikke vælger åben) projektet (du skal ikke bruge nogle eksterne frameworks), men sørg for du kører Java 1.8 som SDK
+5. Tryk næste nogle gang.
 6. Du er færdig!
 
 #### 2. Opgave - kør server og klient
