@@ -32,9 +32,10 @@ public class Server {
                 PrintWriter outToClient = new PrintWriter(connectionSocket.getOutputStream());
 
                 //Write response headers
-                outToClient.println("HTTP/1.0 200 OK");
-                outToClient.println("Content-Type: text/plain");
-                outToClient.println("Server: Cowboy");
+                outToClient.println("HTTP/1.0 404 OK");
+                outToClient.println("Content-Type: text/html");
+                outToClient.println("Server: Lucky Luke");
+                outToClient.println("i_am_a_random_header: with_this_value");
                 outToClient.println("");
 
                 //Content
