@@ -24,7 +24,7 @@ public class Server {
                     System.out.println("Received: " + clientSentence);
 
                     //Capitalize string received from server and return to client as response
-                    //String serverResponse = ???
+                    String serverResponse = clientSentence.toUpperCase();
 
                     outToClient.writeBytes(serverResponse);
 

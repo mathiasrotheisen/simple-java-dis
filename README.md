@@ -28,3 +28,4 @@ Når du har gjort dette kan du køre hhv. server og klient på følgende måde:
 
 #### 3. Opgave - kommuniker med hinanden
 Find sammen med en kammerat og lad jeres systemer snakke med hinanden. Dette kræver at I ændrer klienten's socket til at lytte på serverens (din vens computer)'s IP adresse.
+Hvis i ønsker at kommunikere med hinandens computere, skal i slå jeres firewall fra, sikre jer at i er på samme lokale netværk, og så find jeres lokale ip-adresse (starter med 192.168) og så indtaste denne efterfulgt af portnummeret. Ex "http://192.168.1.140:31337/"
