@@ -12,7 +12,7 @@ Hent dette repository og åbn i IntelliJ
 6. Du er færdig!
 
 #### 2. Opgave - kør server og klient
-Hvis IntelliJ brokker sig over en fejl i Server klassen, så har den fat i noget. På linje 36 bliver der refereret til en variable som ikke eksisterer.
+Hvis IntelliJ brokker sig over en fejl i Server klassen, så har den fat i noget. På linje 29 bliver der refereret til en variable som ikke eksisterer.
 
 Din opgave er at lave `stringResponse` med den besked som kommer fra klientet og gør alle bogstaver store, for til sidst at sende beskeden retur til klienten.
 
